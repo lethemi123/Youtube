@@ -1,0 +1,448 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="backend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="head  d-flex justify-content-around ">
+        <div class="head-left ms-3 w-25 d-flex justify-content-start align-items-center">
+            <div>
+                <a class=" btn btn-outline-light d-flex justify-content-center align-items-center   rounded-circle "
+                    id="circle_left" href="#offcanvas" aria-controls="offcanvas" data-bs-toggle="offcanvas"
+                    type="button">
+                    <img src="pictures/icons8-menu-50.png" class="icon-picture2" alt="">
+                </a>
+                <div class="offcanvas offcanvas-start pe-3 ps-3" tabindex="-1" id="offcanvas"
+                    aria-labelledby="ofcanvaslable">
+                    <div class="offcanvas-header justify-content-center">
+                        <div class="body_left ">
+                            <div class="offcanvas_left d-flex align-items-center d-flex justify-content-start ">
+                                <div class="head-left2 d-flex align-items-center p-2">
+                                    <div class="me-4">
+                                        <img src="pictures/icons8-menu-50.png" class="icon-picture2">
+                                    </div>
+                                    <div class="position-relative"> <img class="p-0 pictures-2 "
+                                            src="pictures/YouTube-Logo.png" title="Home page Youtube">
+                                        <p class="text-end1 position-absolute top-0 start-100 text-dark ">VN</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar">
+                                <ul>
+                                    <li class="nav-item active fw-bold">
+                                        <i class="fa-solid fa-house ms-2"></i>&nbsp;&nbsp;Trang chủ
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/icons8-youtube-shorts-24.png"
+                                            class="icon-short me-2"></img>&nbsp;&nbsp;
+                                        Shorts
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/menu_youtube_social_media_subs_subscription_icon_197393.png"
+                                            class="icon-short"></img>&nbsp;&nbsp;&nbsp;&nbsp; Kênh đăng ký
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item1 justify-content-start">
+                                        <h6 class="m-0">Bạn</h6>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img src="pictures/icons8-more-than-50.png " class="icon-picture2"></img>
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/icons8-person-24.png" class="icon-short"></img>&nbsp;&nbsp;
+                                        Kênh của bạn
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/4124823-film-online-video-video-video-player-video-streaming_113897.png"
+                                            class="icon-short"></img>&nbsp;&nbsp; Danh sách phát
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/filter_filters_funnel_list_navigation_sort_sorting_icon_123212.png"
+                                            class="icon-short"></img>&nbsp;&nbsp; Video của bạn
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/clock-with-white-face_icon-icons.com_72804.png"
+                                            class="icon-short"></img>&nbsp;&nbsp; Xem sau
+                                    </li>
+                                    <li class="nav-item">
+                                        <i class=" icon-short fa-solid fa-thumbs-up ms-2 m-0"></i>&nbsp;&nbsp;Video đã
+                                        thích
+                                    </li>
+                                    <hr>
+                                    <h6>Kênh đăng ký</h6>
+                                    <li class="nav-item1">
+                                        <img src="pictures/vantung.jpg" class="icon-picture"> </img> Văn
+                                        Tùng
+                                        <img src="pictures/icons8-youtube-live-50.png" class="livestream ms-5">
+                                    </li>
+                                    <li class="nav-item1 ">
+                                        <img src="pictures/Optimus.jpg" class="icon-picture"></img> Optimus
+                                        <img src="pictures/icons8-youtube-live-50.png" class="livestream ms-5">
+                                    </li>
+                                    <li class="nav-item1 ">
+                                        <img src="pictures/channels4_profile.jpg" class="icon-picture"></img>
+                                        <p class="text me-3 m-0">Vũ Official</p>
+                                        <img src="pictures/icons8-youtube-live-50.png" class="livestream ms-4">
+                                    </li>
+                                    <li class="nav-item1">
+                                        <img src="pictures/noitinhyeubocdau.jpg" class="icon-picture"></img> nƠi tÌnH
+                                        yÊ...
+                                        <img src="pictures/icons8-youtube-live-50.png" class="livestream ms-4">
+                                    </li>
+                                    <li class="nav-item1">
+                                        <img src="pictures/channels4_profile (1).jpg" class="icon-picture"></img>
+                                        <p class="m-0 ">Vietnam
+                                            Champion...</p>
+                                        <img src="pictures/icons8-dot-24.png" class="livestream">
+                                    </li>
+                                    <li class="nav-item1 justify-content-start">
+                                        <img src="pictures/icons8-expand-arrow-64.png" class="icon-picture"></img>
+                                        &nbsp;&nbsp;
+                                        <h6 class="m-0">Thêm</h6>
+                                    </li>
+                                    <hr>
+                                    <h6>Khám Phá</h6>
+                                    <li class="nav-item">
+                                        <img src="pictures/hot-interface-symbol-of-fire-flames-outline_icon-icons.com_73238.png"
+                                            class="icon-short"></img>&nbsp;&nbsp; Thịnh hành
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/icons8-musical-24.png" class="icon-short"></img>&nbsp;&nbsp;
+                                        Âm Nhạc
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/game_game_console_play_device_icon_133759.png"
+                                            class="icon-short"></img>&nbsp;&nbsp; Trò chơi
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/news_newspaper_icon_177008.png"
+                                            class="icon-short"></img>&nbsp;&nbsp; Tin tức
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/office_trophy_winner_competition_reward_icon_190988.png"
+                                            class="icon-short"></img>&nbsp;&nbsp; Thể Thao
+                                    </li>
+                                    <hr>
+                                    <h6>Dịch vụ khác của Youtube</h6>
+                                    <li class="nav-item">
+                                        <img src="pictures/Youtube_icon-icons.com_66802.png"
+                                            class="icon-short"></img>&nbsp;&nbsp;
+                                        Youtube Premium
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/youtube-studio.png" class="icon-short"></img>&nbsp;&nbsp;
+                                        Youtube Studio
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/Youtube-Music-Logo.webp" class="icon-short1"></img>
+                                        &nbsp;&nbsp;Youtube Music
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/YouTube_Kids_LogoVector.svg.png"
+                                            class="icon-short"></img>&nbsp;&nbsp;Youtube kids
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <i class="icon-short fa-solid fa-gear"></i> Cài Đặt
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/whiteflag_105019.png" class="icon-short"></img>&nbsp; Nhật ký
+                                        báo cáo
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/whatsapp_brand_icon_211850.png" class="icon-short"></img>
+                                        &nbsp;&nbsp;Trợ Giúp
+                                    </li>
+                                    <li class="nav-item">
+                                        <img src="pictures/checkbox_icon_211818.png " class="icon-short"></img>&nbsp;
+                                        Gửi ý kiến phản hồi
+                                    </li>
+                                    <hr>
+                                    <li class="footer">
+                                        <div class="footer_header d-flex justify-content-between ">
+                                            <span>Giới thiệu</span>
+                                            <span>Báo chí</span>
+                                            <span>Bản quyền</span>
+                                        </div>
+                                        <span>Liên hệ với chúng tôi</span>
+                                        <div class="footer_header2 d-flex justify-content-start ">
+                                            <span>Người sáng tạo</span> &nbsp;&nbsp;&nbsp;
+                                            <span>Quảng Cáo</span>
+                                        </div>
+                                        <span>
+                                            Nhà phát triển
+                                        </span>
+                                        <div class="footer_header2 mt-2 d-flex justify-content-start">
+                                            <span>Điều khoản</span>&nbsp;&nbsp;&nbsp;
+                                            <span>Quyền riêng tư</span>
+                                        </div>
+                                        <span>Chính sách và an toàn</span>
+                                        <div>
+                                            <span>Cách YouTube hoạt động</span>
+                                        </div>
+                                        <span>thử các tính năng mới</span>
+                                    </li>
+                                    <li class="under_footer w-100 mt-3  ">
+                                        <div>© 2024 Google LLC</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head-left2 d-flex align-items-center position-relative p-2">
+                <img class=" btn  p-0 pictures " src="pictures/YouTube-Logo.png" title="Home page Youtube">
+                <p class="text-end position-absolute top-0 end-0 text-dark ">VN</p>
+            </div>
+        </div>
+
+        <div class="head-middle mt-1  ">
+            <div class=" input-group ">
+                <input class="search round p-3 border-light-gray" type="text" placeholder="search"
+                    aria-describedby="search-addon">
+                </input>
+                <div class="keyboard" style="margin-left: 520px;">
+                    <button class="ms-520px fas fa-keyboard border-0 round-0 p-0 btn"></button>
+                </div>
+                <button type="button" class="icon-search-right  " data-mdb-ripple-init title="Search">
+                    <i class="fas fa-magnifying-glass"></i></button>
+            </div>
+            <button class="microphone rounded-circle" title="Search by microphone">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+        </div>
+
+
+        <div class="head-right w-25 justify-content-end d-flex align-items-center">
+            <div class="head-right1 rounded-circle align-items-center justify-content-center d-flex me-2 btn"
+                title="Create">
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <div class=" btn head-right2 position-relative rounded-circle align-items-center justify-content-center d-flex me-3 "
+                title="Notification">
+                <span id="Notification"
+                    class="position-absolute mt-2 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    9+
+                </span>
+                <i class="far fa-bell position-relative">
+                </i>
+            </div>
+            <div class=" btn head-right3 badge  rounded-circle align-items-center justify-content-center d-flex me-3">Mỹ
+            </div>
+
+        </div>
+    </div>
+    <!-- body -->
+    <div class="body_full fm- row g-3">
+        <!-- body left -->
+        <div class="body_left mt-5  col-md-1  d-flex aign-items-center justify-content-start">
+            <div class="body_container_left ms-3 row">
+                <ul>
+                    <li class="home_left rounded-2">
+                        <p class=" fa-solid fa-house ms-4 fs-5 ">
+                        </p>
+                        <p class="ms-2 text">Trang chủ</p>
+                    </li>
+                    <li class="home_left mt-1 rounded-2 d-flex flex-colum justify-content-start align-items-center">
+                        <img src="pictures/icons8-youtube-shorts-24.png" class="icon-short-left"
+                            alt="YouTube Shorts Icon">
+                        <p class=" mb-0">Shorts</p>
+                    </li>
+                    <li class="home_left mt-1 rounded-2 d-flex flex-colum justify-content-start align-items-center">
+                        <img src="pictures/menu_youtube_social_media_subs_subscription_icon_197393.png"
+                            class="icon-short-left" alt="YouTube Shorts Icon">
+                        <p class=" mb-0" style="font-size: 10px;">Kênh đăng ký</p>
+                    </li>
+                    <li class="home_left mt-1 rounded-2 d-flex flex-colum justify-content-start align-items-center">
+                        <img src="pictures/icons8-person-24.png" class="icon-short-left" alt="YouTube Shorts Icon">
+                        <p class=" mb-0">Bạn</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- body right -->
+        <div class=" body_right col-md-11 ">
+            <div class=" body_header_right container-fluid d-flex align-items-center justify-content-start w-100 p-1">
+                <span
+                    class="body-header1  bg-dark  btn me-3 ms-2 border border-dark justify-content-center fw-bold  h-100 align-items-center d-flex rounded-3 "
+                    style="width: 64px; padding: 6px 5px; color:  aliceblue; font-size: 13px;">Tất cả</span>
+                <span class="btn body-header" title="Âm nhạc">Âm nhạc</span>
+                <span class="btn body-header" title="Danh sách kết hợp">Danh sách kết hợp</span>
+                <span class="btn body-header" title="Trò chơi">Trò chơi</span>
+                <span class="btn body-header" title="Nhạc Hip-hop">Nhạc Hip-hop</span>
+                <span class="btn body-header" title="Đọc rap">Đọc rap</span>
+                <span class="btn body-header" title="Trò chơi hành động phiêu lưu">Trò chơi hành động phiêu lưu</span>
+                <span class="btn body-header" title="Mới tải lên gần đây">Mới tải lên gần đây</span>
+                <span class="btn body-header" title="Đã xem">Đã xem</span>
+                <span class="btn body-header" title="Đề xuất mới"> Đề xuất mới</span>
+            </div>
+            <div>
+                <img src="pictures/241ccfe1583783b0ec080ca38d7c46722044d20acf7749d77447b26480e4d4d3_4248x1200.png"
+                    class="body_middle mt-2">
+                <div class="btn pictures_right">
+                </div>
+                <div class="picture_youtube position-absolute">
+                    <img src="pictures/Youtube_icon-icons.com_66802.png" style="width: 50px; height: 50px;">
+                    &nbsp;
+                    <h2 class="m-0">YouTube Premium</h2>
+                </div>
+                <div class="text_under_youtube position-absolute d-flex justify-content-start align-items-center">
+                    <h4 class="m-0">6 người, 1 đăng ký. Nhận gói gia đình YouTube Premium <br>để xem video và nhạc không
+                        có quảng cáo.</h4>
+                </div>
+                <div
+                    class=" btn footer_Youtube position-absolute d-flex  justify-content-center border border-dark rounded-5">
+                    1 tháng miễn phí
+                </div>
+            </div>
+            <!-- body right footer -->
+            <div class="body_right_footer row">
+                <div class="col-md-3  ">
+
+                    <div class="container_left  position-relative ">
+                        <div class="position-relative btn rounded-3" style="height: 182px; width: 331px;">
+                            <img src="pictures/hqdefault.webp" class="picture1 rounded-3">
+                            <div
+                                class="live_picture position-relative  rounded-1 d-flex align-items-center justify-content-center border-light">
+                                <img src="pictures/icons8-youtube-live-50 (1).png"
+                                    style="width: 13px; height: 13px;">&nbsp;
+                                <p class="text_picture">TRỰC TIẾP</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="container_left_bottom position-absolute d-flex align-items-start justify-content-start  ">
+                            <div class="container_bottomdown ms-3 mt-3 d-flex">
+                                <img src="pictures/vantung.jpg" class="icon-picture1">
+                                <div class="container_bottomdown_text ms-2 p-1  h-100 w-100">
+                                    <h6 class="text_h6">[Stream 16/10] 1 ngày nữa tới Playoff</h6>
+                                    <div class=" d-flex align-items-center  ">
+                                        <p>Văn Tùng</p>&nbsp;
+                                        <img src="pictures/icons8-check-mark-50.png" style="width: 13px; height: 13px;">
+                                    </div>
+                                    <p>2,9 N Người đang xem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-center align-items-center mt-2 ">
+                    <div class="  d-flex justify-content-center" style="height: 190px; width: 380px;">
+                        <div class="container_middle2 z-1 rounded-3  position-absolute"></div>
+                        <div class="container_middle1 z-2 rounded-3 position-absolute"></div>
+                        <div class="container_middle z-3 rounded-3 position-absolute">
+                            <img src="pictures/dautam.png" style="width: 330px;" class="rounded-3">
+                            <div class="album_picture position-absolute rounded-2">
+                                <img src="pictures/icons8-youtube-live-50 (1).png"
+                                    style="width: 13px; height: 13px;">&nbsp;&nbsp;
+                                <p class="z-3 text_picture fw-bold m-0">Tuyển tập</p>
+                            </div>
+                            <div
+                                class="btn play-all-overlay position-absolute d-flex justify-content-center align-items-center">
+                                <img src="pictures/icons8-play-26 (1).png" alt="">
+                                <p class="text-white">Phát tất cả</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_container_middle ms-4 mt-2 justify-content-start aign-items-center d-flex">
+                        <h6 class="m-0">Danh sách kết hợp tlinh x Low G </h6><br>
+                    </div>
+                    <div class="under_text_middle ms-4">
+                        <p>Tlinh & LowG và nhiều nghệ sĩ khác</p>
+                        <p>Cập nhập hôm nay</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 justify-content-center align-items-center d-flex ">
+                    <div class="container_right ">
+                        <div class="container_top_right w-100" style="height: 180px;">
+                            <div class="btn rounded-3 pt-0 position-absolute">
+                                <img src="pictures/nguaO.png" class="picture1 rounded-3">
+                                <div class="time_video position-absolute border border-dark ">
+                                    <p>2:45</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container_bottomdown ms-3 mt-3 d-flex">
+                            <img src="pictures/wakal.png" class=" icon-picture1">
+                            <div class="container_bottomdown_text ms-2   h-100 w-100">
+                                <h6 class="text_h6 p-0 m-0"
+                                    title="NGỰA Ô - TeuYungBoy, Dangrangto (Prod. DONAL) | Official MV">
+                                    NGỰA Ô - TeuYungBoy, Dangrangto (Prod. DONAL) | Official MV</h6>
+                                <div class=" d-flex align-items-center position-absolute ">
+                                    <p class="btn m-0 p-0 text_p" title="WORKAHOLIC$">WORKAHOLIC$</p>&nbsp;
+                                    <img src=" pictures/icons8-check-mark-50.png" style="width: 10px; height: 10px;">
+                                </div>
+                                <div
+                                    class="d-flex justify-content-start align-items-center ms-1 mt-3 position-absolute">
+                                    <p>2,9 Tr Lượt xem</p>&nbsp;
+                                    <img src="pictures/icons8-dot-24 (1).png" class="livestream_dot" alt="dot">&nbsp;
+                                    <p>1 tuần trước</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-center align-items-center d-flex ">
+                    <div class="container_right ">
+                        <div class="container_top_right w-100" style="height: 180px;">
+                            <div class="btn rounded-3 pt-0 position-absolute">
+                                <img src="pictures/tuongtu.webp" class="picture1 rounded-3">
+                                <div class="time_video position-absolute border border-dark ">
+                                    <p>2:45</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container_bottomdown ms-3 mt-3 d-flex">
+                            <img src="pictures/noitinhyeubocdau.jpg" class=" icon-picture1">
+                            <div class="container_bottomdown_text ms-2   h-100 w-100">
+                                <h6 class="text_h6 p-0 m-0" title="TƯƠNG TƯ NÀNG NHÂN VIÊN (GRAB VIỆT 2024) - CCMK x Langtuc0d0n x prod.Nevatrash
+                                    "> TƯƠNG TƯ NÀNG NHÂN VIÊN (GRAB VIỆT 2024) - CCMK x Langtuc0d0n...</h6>
+                                <div class=" d-flex align-items-center justify-content-start d-flex position-absolute ">
+                                    <p class="btn m-0 p-0 text_p justify-content-start d-flex " style="width: 150px;"
+                                        title="nƠi tÌnH yÊu bỐc đẦu">nƠi tÌnH yÊu bỐc đẦu
+                                    </p>
+                                    <img src=" pictures/icons8-check-mark-50.png" style="width: 10px; height: 10px;">
+                                </div>
+                                <div
+                                    class="d-flex justify-content-start position-absolute mt-4 fw-normal align-items-center ">
+                                    <p>30 Tr Lượt xem</p>&nbsp;
+                                    <img src="pictures/icons8-dot-24 (1).png" class="livestream_dot" alt="dot">&nbsp;
+                                    <p>1 tuần trước</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
