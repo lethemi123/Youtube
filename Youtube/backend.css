@@ -6,7 +6,10 @@
     background-color: #ffff;
 }
 
-
+body{
+    overflow-y: auto;
+    overflow-x: auto;
+}
 
 .head-left {
     justify-content: start;
@@ -42,15 +45,90 @@
 
 }
 
+/* Cấu trúc chung cho thanh tìm kiếm */
 .search {
     border: 1px solid #AAAAAA;
     width: 550px;
     height: 41px;
     border-radius: 50px;
-    display: flex;
-
+    transition: width 0.3s ease; 
+    padding-left: 20px;
+    display: inline-block;
 }
 
+.input-group input.search {
+    width: 500px; 
+}
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 5px;
+    max-width: 500px; /* Chiều rộng của thanh tìm kiếm */
+    background-color: white;
+}
+
+/* Ô input của thanh tìm kiếm */
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 550px;
+    flex-grow: 1;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+/* Nút với biểu tượng bên trong */
+.search-icon {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Biểu tượng bên trong nút */
+.search-icon i {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Khi rê chuột vào biểu tượng */
+.search-icon:hover i {
+    color: black;
+}
+.divider {
+    width: 1px;
+    height: 30px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+@media (max-width: 768px) {
+    .head_middle{
+        display: none;
+    }
+    .search-bar-container,h4{
+        display: none;
+    }
+    .body_middle{
+        display: none;
+    }
+    .picture_youtube{
+        display: none;
+    }
+    .microphone{
+        display: none;
+    }
+    
+    
+}
+
+/* Hiệu ứng khi focus vào thanh tìm kiếm */
 .search:focus {
     outline: none;
     border: 1px solid #ccc;
@@ -60,10 +138,7 @@
 .icon-search-right {
     border: 1px solid #ccc;
     height: 41px;
-
-    width: 64px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: 64px;   
     background-color: #F0F0F0;
     transition: background-color 0.3s ease;
 }
@@ -72,31 +147,7 @@
     background-color: #E5E5E5;
 }
 
-.icon-search-right:focus {
-    outline: none;
-    border: 1px solid #ccc;
-}
-
-.head-middle {
-    border: 1px hidden black;
-    width: 670px;
-    height: 42px;
-    display: flex;
-}
-
-
-
-.keyboard {
-    position: absolute;
-    align-items: center;
-    margin-top: 14px;
-    padding: 0px;
-}
-
-.keyboard:hover {
-    background-color: #D9D9D9;
-}
-
+/* Nút microphone */
 .microphone {
     align-items: center;
     border: 1px hidden black;
@@ -104,11 +155,22 @@
     display: flex;
     justify-content: center;
     background-color: #F0F0F0;
+    transition: background-color 0.3s ease;
 }
 
 .microphone:hover {
     background-color: #D9D9D9;
 }
+
+/* Container của thanh tìm kiếm */
+.head-middle {
+    width: 670px;
+    height: 42px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 
 
 
@@ -196,7 +258,7 @@
 
 .sidebar {
     width: auto;
-
+    
     background-color: #fff;
 
 }
@@ -317,25 +379,14 @@ hr {
 }
 
 .body_middle {
-    width: 1400px;
+    width: 1380px;
     height: 300px;
     border: 1px hidden black;
     position: relative;
     border-radius: 20px;
 }
 
-.pictures_right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    border-radius: 50%;
-    left: 1260.46;
-    top: 120px;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-}
+
 
 .pictures_right:hover {
     background: #e3e3e3;
@@ -371,13 +422,14 @@ hr {
 }
 
 .body_right_footer {
-    padding-top: 20px;
+    margin-left: 0px;
+    padding-top: 10px;
     width: auto;
     height: 300px;
 }
 
 .container_left {
-    top: 8px;
+    top: 14px;
     height: 180px;
     width: 350px;
 }
@@ -498,10 +550,19 @@ p {
 }
 
 .container_right {
-    height: 260px;
+    height: 183px;
     width: 332px;
 }
 
+.text_p1{
+    width: 140px;
+    height: auto;
+    font-size: 14px;
+    color: #717171;
+}
+.text_p1:hover{
+    color: black;
+}
 .time_video {
     display: flex;
     justify-content: center;
@@ -515,7 +576,7 @@ p {
     color: #F0F0F0;
     border-radius: 4px;
     background-color: black;
-    left: 295px;
+    left: 280px;
     opacity: 0.8;
 }
 
@@ -528,7 +589,6 @@ p {
     height: auto;
     font-size: 14px;
     color: #717171;
-
 }
 
 .text_p:hover {
@@ -587,7 +647,6 @@ p {
 }
 
 .text {
-
     font-size: 12px;
 }
 
